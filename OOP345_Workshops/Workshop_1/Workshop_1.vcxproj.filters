@@ -15,27 +15,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="part_1\RideRequest.cpp">
+    <ClCompile Include="part_2\w1_p2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="part_1\w1_p1.cpp">
+    <ClCompile Include="part_2\RideRequest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="part_1\rides1.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="part_1\rides2.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="part_1\sample_output.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="part_1\RideRequest.h">
+    <ClInclude Include="part_2\RideRequest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="part_2\rides1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="part_2\rides2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="part_2\rides4.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="part_2\sample_output.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

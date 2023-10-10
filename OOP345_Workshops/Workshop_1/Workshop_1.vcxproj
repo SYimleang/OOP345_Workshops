@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="part_2\RideRequest.cpp" />
+    <ClCompile Include="part_2\w1_p2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="part_2\RideRequest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="part_2\rides1.txt" />
+    <Text Include="part_2\rides2.txt" />
+    <Text Include="part_2\rides4.txt" />
+    <Text Include="part_2\sample_output.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,18 +139,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="part_1\RideRequest.cpp" />
-    <ClCompile Include="part_1\w1_p1.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="part_1\RideRequest.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="part_1\rides1.txt" />
-    <Text Include="part_1\rides2.txt" />
-    <Text Include="part_1\sample_output.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

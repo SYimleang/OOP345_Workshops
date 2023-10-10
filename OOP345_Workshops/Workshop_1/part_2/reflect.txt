@@ -1,0 +1,38 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 16 September 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, I learned about key concepts in C++ programming, such as linkage, storage duration, namespaces, and memory management. 
+
+Internal and external linkage were explored, with examples in the code illustrating how variables and functions can have different levels of visibility across translation units which I practiced with extern double g_taxrate and extern double g_discount in the workshop.
+
+In storage duration, I learned that static variables were introduced as variables with program-wide scope, demonstrated by the m_counter variable in the RideRequest class, which counts the number of objects created.
+
+The most significant upgrade to the RideRequest class involved handling ride descriptions as C-style null-terminated strings and avoiding memory leaks. I transitioned from using a C-style of ride description from "char m_rideDetails[26]" which is in the fixed size of memory to "char* m_rideDetails" the dynamic array of the character type for improved memory management including learning to improve the efficiency of the rule of three from my professor.
+
+I faced some problems with defining and declaring static-type variables. I have defined the counter which is the static variable inside the private member class and I faced the compilation error. After studying deeper I realized that static type should not be defined inside the class. So I define the static variable inside the display function instead.
+
+Before:
+class RideRequest
+{
+	char m_customerName[11];
+	char* m_rideDetails{};
+	double m_price{};
+	bool m_discount{};
+	static int counter;
+public: ...}
+
+After fixed:
+void RideRequest::display() const {
+	static int m_counter;
+...
+}
+		
