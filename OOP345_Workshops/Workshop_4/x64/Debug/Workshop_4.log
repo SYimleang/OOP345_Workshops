@@ -1,0 +1,5 @@
+﻿  Cheese.cpp
+C:\Users\Frami\Documents\frame\Repo\OOP345_Workshop\OOP345_Workshops\Workshop_4\part_1\Cheese.cpp(62,22): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
+  w4_p1.cpp
+  Generating Code...
+  Workshop_4.vcxproj -> C:\Users\Frami\Documents\frame\Repo\OOP345_Workshop\OOP345_Workshops\x64\Debug\Workshop_4.exe
