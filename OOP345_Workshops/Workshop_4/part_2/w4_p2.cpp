@@ -1,6 +1,8 @@
-// w4_p2.cpp
-// Jan 28 2023
-// Michael Huang
+// Workshop 4 - Containers
+// Name:	Sasawat Yimleang
+// ID:		114036221
+// E-mail:	syimleang@myseneca.ca
+// Date:	2023/10/08
 
 #include <fstream>
 #include <iomanip>

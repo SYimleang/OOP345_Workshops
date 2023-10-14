@@ -1,0 +1,31 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 8 October 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, I learned about new concepts in C++ programming, which is the Containers.
+
+I made practical practice with the composition and aggregation relationship in this workshop by playing around with the CheeseShop module and CheeseParty module.
+The difference between these two modules is that CheeseShop uses composition, where it owns and manages the Cheese objects it contains, while CheeseParty uses aggregation, where it holds references to Cheese objects without assuming ownership.
+
+the difference between the implementations of move and copy functions in composition and aggregation with reference to the classes used in this workshop is when we create the copy and move function in composition relation (CheeseShop), we need to copy or move both pointer addresses and all the objects. While aggregation just needs to copy or move only the pointer addresses. And for the addCheese function in both of them is also difference because the composition relation(CheeseShop) needs to manage the cheese object while the aggregation relation(CheeseParty) only needs to manage the address that point to the object.
+
+
+the CheeseShop class doesn't have a removeCheese function like the CheeseParty does. If I want to keep in line with how CheeseShop handles its cheeses. I need to add the removeCheese function of the CheeseShop class and create the temporary cheese object to hold the current object using the check weight condition same as the CheeseParty class and add the not 0 weight cheese to this new object array. Then assign a temporary cheese object to a current object.
+
+CheeseShop& removeCheese() {
+	1. create a temporary object array.
+	2. copy the current object array to the temporary object array.
+	3. Looping to all objects by using m_cnt to control the number of current objects.
+	4. Delete the current object array.
+	5. Dynamic allocates the current object to be the same size as the temporary object array.
+	6. Assign the current temporary object array to the current object array.
+	7. Return the current object array.
+}

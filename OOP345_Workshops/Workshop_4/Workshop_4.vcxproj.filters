@@ -15,23 +15,35 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="part_1\Cheese.cpp">
+    <ClCompile Include="part_2\Cheese.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="part_1\w4_p1.cpp">
+    <ClCompile Include="part_2\CheeseParty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="part_2\CheeseShop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="part_2\w4_p2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="part_1\Cheese.h">
+    <ClInclude Include="part_2\Cheese.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="part_2\CheeseParty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="part_2\CheeseShop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="part_1\cheeses.txt">
+    <Text Include="part_2\cheeses.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="part_1\sample_output.txt">
+    <Text Include="part_2\sample_output.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
