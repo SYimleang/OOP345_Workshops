@@ -11,7 +11,9 @@
 namespace sdds {
 
     // Default constructor
-    Book::Book() {}
+    Book::Book() {
+        
+    }
 
     // Constructor with arguments to assign receives arguments to the object members.
     Book::Book(const std::string& title, unsigned nChapters, unsigned nPages)
