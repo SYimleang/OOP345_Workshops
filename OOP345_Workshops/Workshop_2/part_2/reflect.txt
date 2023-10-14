@@ -1,0 +1,20 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 24 September 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, I learned about key concepts in C++ programming, such as move and copy semantics. 
+
+I learned about the efficient transfer of resources using move semantics, the importance of rvalue references, and the benefits of minimizing unnecessary copying in C++ programming. This knowledge will enhance my code efficiency and resource management in future projects.
+
+I also learned about timers, allowing me to analyze the spending time to execute my program in each part. I might be used in a future project to optimize my program runtime or to schedule automated program tasks. I realize how useful it is by imagining what this can be used for in my next project.
+
+Problems:
+I faced problems with handling the rules of five (destructor, copy, and move) when I tried to run the main function. Because with specific code in the main function, it is very strict about copying or moving with the destructor. I spent many hours to figure it out, which is so challenging, and improving myself in an appropriate way to use them.

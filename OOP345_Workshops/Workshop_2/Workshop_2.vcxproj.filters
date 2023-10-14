@@ -15,26 +15,32 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="part_1\AirportModels.cpp">
+    <ClCompile Include="part_2\Timer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="part_1\w2_p1.cpp">
+    <ClCompile Include="part_2\AirportModels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="part_2\w2_p2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="part_1\sample_output.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="part_1\AirportModels.h">
+    <ClInclude Include="part_2\AirportModels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="part_2\Timer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="part_1\airport_data.csv">
+    <None Include="part_2\airport_data.csv">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="part_2\sample_output.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
