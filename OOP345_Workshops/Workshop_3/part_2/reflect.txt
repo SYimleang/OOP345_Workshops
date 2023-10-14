@@ -1,0 +1,25 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 1 October 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, I learned about new concepts in C++ programming, which is the Template. 
+
+I learned that when we use a template class, the compiler generates code for each specific type you use with that template. This code generation occurs at compile time. This means the compiler needs to see both the template definition and its implementation when it processes the code that uses the template. If we implement the template member functions in separate .cpp files, can cause linker errors in the compilation time.
+
+I have learned the importance of keeping my code in the better design, minimizing the side effects, and maintaining by making some function as query such as the "T operator[](const size_t& i)" function, it is better if we make this as query to make sure that this function will not modify the state of the object.
+
+Another thing that I study is the query must not have any side effects on object members but for the static function such as static T getSmallestItem() and static T getLargestItem() it might have side effects on the object members.
+
+The purpose of specializing the definition of m_smallestItem and m_largestItem objects is to initialize the specific value for using comparing to  recieves item to get the actual smallest and largest item. If we did not initialize them, when compare between two object it will be results to some random value instead of correct value (received value compare with garbage value).
+
+After I studied the reason for defining the class objects outside the class definition. I got the rational reason which is for proper memory allocation, initialization, and encapsulation of these members, ensuring that they behave as expected. But I need to say that this is only from I researched from various websites but I still cannot do the experimental myself.
+
+

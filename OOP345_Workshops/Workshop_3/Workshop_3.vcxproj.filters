@@ -15,23 +15,26 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="part_1\Book.cpp">
+    <ClCompile Include="part_2\Book.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="part_1\w3_p1.cpp">
+    <ClCompile Include="part_2\w3_p2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="part_1\Book.h">
+    <ClInclude Include="part_2\Book.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="part_1\Collection.h">
+    <ClInclude Include="part_2\Collection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="part_2\OrderedCollection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="part_1\sample_output.txt">
+    <Text Include="part_2\sample_output.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
