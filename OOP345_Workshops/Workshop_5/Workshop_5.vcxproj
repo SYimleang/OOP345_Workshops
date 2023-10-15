@@ -18,6 +18,24 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="part_2\Book.cpp" />
+    <ClCompile Include="part_2\Movie.cpp" />
+    <ClCompile Include="part_2\SpellChecker.cpp" />
+    <ClCompile Include="part_2\w5_p2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="part_2\Book.h" />
+    <ClInclude Include="part_2\Collection.h" />
+    <ClInclude Include="part_2\Movie.h" />
+    <ClInclude Include="part_2\SpellChecker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="part_2\books.txt" />
+    <Text Include="part_2\movies.txt" />
+    <Text Include="part_2\sample_output.txt" />
+    <Text Include="part_2\words.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,17 +144,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="part_1\Book.cpp" />
-    <ClCompile Include="part_1\w5_p1.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="part_1\Book.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="part_1\books.txt" />
-    <Text Include="part_1\sample_output.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

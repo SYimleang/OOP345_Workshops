@@ -1,0 +1,23 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 15 October 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+In this workshop, I learned about new concepts in C++ programming, which is the Functions and Error Handling.
+
+I learned that functors and lambdas are both objects that can be invoked as functions. but they have different purposes: Functors are instances of a class that define the operator() method and are useful when we need to maintain state across function calls, while lambdas are anonymous functions and are more concise and suitable for simple operations.
+
+The constructor for SpellChecker generates an exception in certain conditions which are typically used for exceptional and unrecoverable errors. We can avoid exceptions by using a boolean return value, indicating whether the initialization succeeded, the client code can check the return value and handle the error that is suitable for expected recoverable errors.
+
+The classes Movie and Book contain almost identical logic in loading data from the file. We can avoid duplicating this logic by creating a common base class and making Movie and Book classes inherit from this base class to reuse the code.
+
+
+The classes Movie and Book are instantiated from the main() function using a custom constructor. The default constructor of these two classes is necessary if we overload the constructor with the argument. 
+
+In my code I tried to create both overload constructors in different ways, but with similar logic.
