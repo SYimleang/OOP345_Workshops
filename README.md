@@ -1,1 +1,1 @@
-# OOP345_Workshop
+# OOP345_Workshops
