@@ -1,5 +1,14 @@
 ﻿  Directory.cpp
-  File.cpp
-  w6_p1.cpp
-  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\numeric(34,26): warning C4267: '=': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned int
+          ]
+C:\Users\Frami\Documents\frame\Repo\OOP345_Workshop\OOP345_Workshops\Workshop_6\part_1\Directory.cpp(54,15): message : see reference to function template instantiation '_Ty std::accumulate<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<sdds::Resource*>>>,unsigned int,sdds::Directory::size::<lambda_1>>(const _InIt,const _InIt,_Ty,_Fn)' being compiled
+          with
+          [
+              _Ty=unsigned int,
+              _InIt=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<sdds::Resource *>>>,
+              _Fn=sdds::Directory::size::<lambda_1>
+          ]
   Workshop_6.vcxproj -> C:\Users\Frami\Documents\frame\Repo\OOP345_Workshop\OOP345_Workshops\x64\Debug\Workshop_6.exe
