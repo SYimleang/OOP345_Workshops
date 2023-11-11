@@ -1,5 +1,8 @@
 // Workshop 8 - Smart Pointers
-// 2019/11 - Cornel
+// Name:	Sasawat Yimleang
+// ID:		114036221
+// E-mail:	syimleang@myseneca.ca
+// Date:	
 
 #include <memory>
 #include <utility>
@@ -10,6 +13,8 @@
 using namespace std;
 
 namespace sdds {
+
+	// 
 	DataBase<Profile> excludeRaw(const DataBase<Profile>& allProfiles, const DataBase<Profile>& bannedProfiles) {
 		DataBase<Profile> result;
 		// TODO: Add your code here to build a collection of Profiles.

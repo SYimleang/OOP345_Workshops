@@ -1,4 +1,8 @@
 // Workshop 8 - Smart Pointers
+// Name:	Sasawat Yimleang
+// ID:		114036221
+// E-mail:	syimleang@myseneca.ca
+// Date:	
 
 #include <iostream>
 #include <fstream>
