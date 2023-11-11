@@ -1,0 +1,48 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 11 November 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+In this workshop, I learned about new concepts in C++ programming, which is the STL Algorithms.
+
+I have learned to use many STL functions that are very useful such as std::accumulate to compute the sum of the elements in the collection, std::for_each to loop and check the condition of each element, std::sort to sort the elements in the collection, std::any_of to find and get the boolean value from the condition, std::copy_if to copy the element to the new container(list container) from the conditions. 
+
+After studying and using the STL algorithms in my code, I realized that STL algorithms are standardization, high safety, high efficiency, easy to reuse, easy to read and maintain. The std::for_each function reduces the risk from control iteration by myself and can attach the lambda expression in the function.
+ 
+We can also upgrade the sort function in the program to prevent the error from the client by creating an enum class of the sorting field and modifying the sort function parameter to receive the member of the enum class. This will make sure that the client will pass the sorting field without any typos or misspellings.
+For example:
+enum class SortField {
+	Country,
+	City,
+	Year,
+	Variant
+} then modify the logic conditions to be related to these fields.
+
+
+These are the examples that I used the STL functions in CovidCollection.cpp
+
+	std::accumulate(m_collection.begin(), m_collection.end(), (size_t)0, [](const size_t& totalWorldCases, const Covid& covid) 	{ return totalWorldCases + covid.m_numCase; });
+
+	std::for_each(m_collection.begin(), m_collection.end(), [&out](const Covid& covid) { out << covid << std::endl; });
+
+	std::sort(m_collection.begin(), m_collection.end(), [field](const Covid& covid, const Covid& covidOther)
+	{					
+		// Checks if field is "country" or "DEFAULT", then sort by "m_country". 
+		if (field == "country" || field == "DEFAULT") {
+			// If values are equal then checks be "m_numDeath"
+			if (covid.m_country == covidOther.m_country)
+				return covid.m_numDeath < covidOther.m_numDeath;
+			return covid.m_country < covidOther.m_country;
+		}
+	...
+	}
+
+	return std::any_of(m_collection.begin(), m_collection.end(), [&](const Covid& covid) {
+		return (covid.m_country == country) && (covid.m_variant == variant) && (covid.m_numDeath > deaths);
+		});

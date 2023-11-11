@@ -19,15 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="part_1\CovidCollection.h" />
+    <ClCompile Include="part_2\CovidCollection.cpp" />
+    <ClCompile Include="part_2\w7_p2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="part_1\covids.txt" />
-    <Text Include="part_1\sample_output.txt" />
+    <ClInclude Include="part_2\CovidCollection.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="part_1\CovidCollection.cpp" />
-    <ClCompile Include="part_1\w7_p1.cpp" />
+    <Text Include="part_2\covids.txt" />
+    <Text Include="part_2\sample_output.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
