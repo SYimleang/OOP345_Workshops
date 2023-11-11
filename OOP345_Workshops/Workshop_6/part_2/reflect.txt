@@ -1,0 +1,19 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 5 November 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+In this workshop, I learned about new concepts in C++ programming, which is the STL Containers.
+
+I have learned that a vector is the contiguous storage of variable size which allowed us to add any member in the vector. However, we must still deallocate the dynamically allocated memory in the vector to prevent the memory leak.
+
+I have also learned and implemented the dynamic_cast, which when I need to store the Directory objects from calling the method which returns Resource* objects type. I need to do the dynamic type conversion by using dynamic_cast to transform the base class object type to the derived class object type.
+
+In this workshop, I had to use std::vector<sdds::Resource*> to store a collection of filesystem resources as pointers which allowed me to change the number of objects inside the vector during the program execution.
+We can use std::vector<sdds::Resource> instead but only if the number of the objects was known and fixed in advance. However, in a filesystem where resources can be added or removed, we should use std::vector<sdds::Resource*> that accommodates these changes.

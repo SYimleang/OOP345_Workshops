@@ -15,32 +15,41 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="part_1\Flags.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="part_1\Resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="part_1\Directory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="part_1\File.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="part_1\w6_p1.cpp">
+    <ClCompile Include="part_2\Directory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="part_1\File.cpp">
+    <ClCompile Include="part_2\File.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="part_1\Directory.cpp">
+    <ClCompile Include="part_2\w6_p2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="part_2\Filesystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="part_1\sample_output.txt">
+    <ClInclude Include="part_2\Flags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="part_2\Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="part_2\Directory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="part_2\File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="part_2\Filesystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="part_2\sample_output.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="part_2\filesystem.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

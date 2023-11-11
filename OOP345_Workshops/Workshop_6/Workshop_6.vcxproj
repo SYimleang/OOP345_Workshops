@@ -18,6 +18,23 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="part_2\Directory.cpp" />
+    <ClCompile Include="part_2\File.cpp" />
+    <ClCompile Include="part_2\Filesystem.cpp" />
+    <ClCompile Include="part_2\w6_p2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="part_2\Directory.h" />
+    <ClInclude Include="part_2\File.h" />
+    <ClInclude Include="part_2\Filesystem.h" />
+    <ClInclude Include="part_2\Flags.h" />
+    <ClInclude Include="part_2\Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="part_2\filesystem.txt" />
+    <Text Include="part_2\sample_output.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,20 +143,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="part_1\Directory.h" />
-    <ClInclude Include="part_1\File.h" />
-    <ClInclude Include="part_1\Flags.h" />
-    <ClInclude Include="part_1\Resource.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="part_1\sample_output.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="part_1\Directory.cpp" />
-    <ClCompile Include="part_1\File.cpp" />
-    <ClCompile Include="part_1\w6_p1.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
