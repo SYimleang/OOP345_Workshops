@@ -109,12 +109,13 @@ namespace sdds {
 			// Define string for display as format
 			std::string caseToDisplay = "Total cases in " + country;
 			std::string deathToDisplay = "Total deaths in " + country;
+			std::string percentageToDisplay = country + " has " + std::to_string(casePercentage) + "% of global cases and " + std::to_string(deathPercentage) + "% of global deaths |";
 
 			// Insert the conclusion
 			out << std::setw(89) << std::setfill('-') << '\n' << std::setfill(' ');
 			out << "| " << std::right << std::setw(78) << caseToDisplay << ": " << std::setw(4) << totalCases << " |" << std::endl;
 			out << "| " << std::right << std::setw(78) << deathToDisplay << ": " << std::setw(4) << totalDeaths << " |" << std::endl;
-			out << "| " << std::right << std::setw(23) << country << " has " << std::fixed << std::setprecision(6) << casePercentage << "% of global cases and " << deathPercentage << "% of global deaths |" << std::endl;
+			out << "| " << std::right << std::setw(86) << percentageToDisplay << std::endl;
 		}
 	}
 
