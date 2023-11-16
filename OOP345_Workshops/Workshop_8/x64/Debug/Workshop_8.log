@@ -1,5 +1,2 @@
 ﻿  Utilities.cpp
-C:\Users\Frami\Documents\frame\Repo\OOP345_Workshop\OOP345_Workshops\Workshop_8\part_1\Profile.h(135,22): error C7525: inline variables require at least '/std:c++17'
-  w8_p1.cpp
-C:\Users\Frami\Documents\frame\Repo\OOP345_Workshop\OOP345_Workshops\Workshop_8\part_1\Profile.h(135,22): error C7525: inline variables require at least '/std:c++17'
-  Generating Code...
+  Workshop_8.vcxproj -> C:\Users\Frami\Documents\frame\Repo\OOP345_Workshop\OOP345_Workshops\x64\Debug\Workshop_8.exe

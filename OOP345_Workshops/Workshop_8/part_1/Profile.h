@@ -2,7 +2,7 @@
 // Name:	Sasawat Yimleang
 // ID:		114036221
 // E-mail:	syimleang@myseneca.ca
-// Date:	
+// Date:	November 16, 2023
 
 #ifndef SDDS_PROFILE_H
 #define SDDS_PROFILE_H
@@ -117,7 +117,7 @@ namespace sdds {
 				!std::isdigit(m_address.postal_code[4]) ||							// Check fifth character	(digit)
 				!std::isalpha(m_address.postal_code[5]) ||							// Check sixth character	(alphabet)
 				!std::isdigit(m_address.postal_code[6])) {							// Check seventh character	(digit)
-					throw std::string("***Invalid Address***");
+					throw std::string("*** Invalid Address ***");
 			}
 		}
 
@@ -129,9 +129,9 @@ namespace sdds {
 			   << std::setw( 5) << p.m_age;
 			return os << std::endl;
 		}
+
 	};
-	
-	// 
 	inline int Profile::m_idGenerator{};
+	
 }
 #endif

@@ -2,7 +2,7 @@
 // Name:	Sasawat Yimleang
 // ID:		114036221
 // E-mail:	syimleang@myseneca.ca
-// Date:	
+// Date:	November 16, 2023
 
 #ifndef SDDS_DATABASE_H
 #define SDDS_DATABASE_H
@@ -54,8 +54,8 @@ namespace sdds {
 		const T& operator[](size_t i) const { return database[i]; }
 
 		// Overload the += operator to the DataBase template with a raw pointer. Copies the object into the collection attribute.
-		DataBase<T>& operator+=(const T& obj) {
-			database.push_back(obj);
+		DataBase<T>& operator+=(const T* obj) {
+			database.push_back(*obj);
 			return *this;
 		}
 
