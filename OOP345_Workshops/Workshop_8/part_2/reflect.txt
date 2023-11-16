@@ -1,0 +1,63 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 16 November 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+In this workshop, I learned about new concepts in C++ programming, which is the Smart Pointers.
+
+I have learned that using the smart pointers provides exception safety for dynamically allocated memory by deallocating the dynamic memory object when the smart pointer is destroyed, which can transfer the ownership of the object in move construction and move assignment. These give me an easier way to manage and prevent memory leaks. While using raw pointers, I need to use the error handling method by using try/catch and deallocate dynamic memory in the catch block and after finishing the block. These are compare code by using raw pointers and smart pointers
+
+Raw pointers:
+DataBase<Profile> excludeRaw(const DataBase<Profile>& allProfiles, const DataBase<Profile>& bannedProfiles) {
+...
+// If matches object not found
+if (!isBanned) {
+	// Dynamic allocating current object
+	Profile* newProfile = new Profile(allProfiles[i].m_name, allProfiles[i].m_address, allProfiles[i].m_age);
+		try {
+			// Validate address
+			newProfile->validateAddress();
+
+			// Add dynamic object to "result"
+			result += newProfile;
+		}
+		catch (...) {
+			// Deallocate dynamic object
+			delete newProfile;
+
+			throw;
+		}
+		// Deallocate dynamic object
+		delete newProfile;
+	}
+}
+return result;
+}
+
+Smart pointers:
+DataBase<Profile> excludeSmart(const DataBase<Profile>& allProfiles, const DataBase<Profile>& bannedProfiles) {
+...
+// If matches object not found
+if (!isBanned) {
+
+	// Define smart pointers of current object
+	unique_ptr<Profile> newProfile(new Profile(allProfiles[i].m_name, allProfiles[i].m_address, allProfiles[i].m_age));
+
+	// Validate address
+	newProfile->validateAddress();
+
+	// Add current object to "result"
+	result += newProfile;
+}
+return result;
+}
+
+Another thing I have seen in this workshop is that we create either raw pointers or smart pointers, the program will create the copy of the object. (We can see on the m_id in the output) To prevent this inaccuracy, we can use a move constructor or move assignment instead of adding the copied objects to the result.
+
+One last thing I have learned is if we try to use the explicit move constructor in the class "Profile", the program will use the copy construction instead which will lead to throwing an error that we prevent.

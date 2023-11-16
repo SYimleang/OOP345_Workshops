@@ -79,7 +79,7 @@ namespace sdds {
 			return f.good();
 		}
 
-		// Constructor with three arguments. Assign the received parameter to "m_name", "m_address" and "m_age", then 
+		// Constructor with three arguments. Assign the received parameter to "m_name", "m_address" and "m_age"
 		Profile(const Name& name, const Address& addr, unsigned age) {
 			this->m_name = name;
 			this->m_address = addr;
