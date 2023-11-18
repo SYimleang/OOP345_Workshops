@@ -1,0 +1,137 @@
+Command Line:
+--------------------------
+  1: ws
+  2: data_int.dat
+  3: data_int_target.dat
+--------------------------
+
+==========================================================================================
+                 Average and variance of record-values using 1 thread(s).
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.dat': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Read [2000005] bytes from the files; the content is the same.
+Data statistics ("data_int.dat"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 21 milliseconds.
+==========================================================================================
+
+
+==========================================================================================
+                 Average and variance of record-values using 2 thread(s).
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.dat': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Read [2000005] bytes from the files; the content is the same.
+Data statistics ("data_int.dat"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 19 milliseconds.
+==========================================================================================
+
+
+==========================================================================================
+                 Average and variance of record-values using 3 thread(s).
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.dat': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Read [2000005] bytes from the files; the content is the same.
+Data statistics ("data_int.dat"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 18 milliseconds.
+==========================================================================================
+
+
+==========================================================================================
+                 Average and variance of record-values using 4 thread(s).
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.dat': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Read [2000005] bytes from the files; the content is the same.
+Data statistics ("data_int.dat"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 18 milliseconds.
+==========================================================================================
+
+
+==========================================================================================
+                 Average and variance of record-values using 5 thread(s).
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.dat': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Read [2000005] bytes from the files; the content is the same.
+Data statistics ("data_int.dat"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 18 milliseconds.
+==========================================================================================
+
+
+==========================================================================================
+                 Average and variance of record-values using 6 thread(s).
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.dat': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Read [2000005] bytes from the files; the content is the same.
+Data statistics ("data_int.dat"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 18 milliseconds.
+==========================================================================================
+
+
+==========================================================================================
+                 Average and variance of record-values using 7 thread(s).
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.dat': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Read [2000005] bytes from the files; the content is the same.
+Data statistics ("data_int.dat"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 23 milliseconds.
+==========================================================================================
+
+
+==========================================================================================
+                 Average and variance of record-values using 8 thread(s).
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.dat': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Read [2000005] bytes from the files; the content is the same.
+Data statistics ("data_int.dat"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 19 milliseconds.
+==========================================================================================
+
+
+==========================================================================================
+                 Average and variance of record-values using 9 thread(s).
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.dat': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Read [2000005] bytes from the files; the content is the same.
+Data statistics ("data_int.dat"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 18 milliseconds.
+==========================================================================================
+
+
+==========================================================================================
+                 Average and variance of record-values using 10 thread(s).
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.dat': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Read [2000005] bytes from the files; the content is the same.
+Data statistics ("data_int.dat"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 19 milliseconds.
+==========================================================================================
+
+
