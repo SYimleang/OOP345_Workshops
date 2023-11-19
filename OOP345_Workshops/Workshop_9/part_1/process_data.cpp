@@ -2,7 +2,7 @@
 // Name:	Sasawat Yimleang
 // ID:		114036221
 // E-mail:	syimleang@myseneca.ca
-// Date:	November 17, 2023
+// Date:	November 19, 2023
 
 #include <string>
 #include <iostream>
@@ -49,33 +49,66 @@ namespace sdds
 	//   It prints first five data items and the last three data items as data samples.
 	//   
 	ProcessData::ProcessData(const std::string& filename) {
-		// TODO: Open the file whose name was received as parameter and read the content
-		//         into variables "total_items" and "data". Don't forget to allocate
-		//         memory for "data".
-		//       The file is binary and has the format described in the specs.
 
+		// Opens the file in binary mode (from received parameter)
+		std::ifstream file(filename, std::ios::binary);
 
+		// Check if the file is open properly
+		if (!file) {
+			std::cerr << "Error: Unable to open file " << filename << std::endl;
+			return;
+		}
 
+		// Read the total number of data items (first 4 bytes)
+		file.read(reinterpret_cast<char*>(&total_items), sizeof(int));
 
+		// Allocate memory for "data"
+		data = new int[total_items];
 
+		// Read the data items into the allocated memory ("data")
+		file.read(reinterpret_cast<char*>(data), total_items * sizeof(int));
+
+		// Display the contents of the file ("filename", "total_items" and "data"s)
 		std::cout << "Item's count in file '"<< filename << "': " << total_items << std::endl;
 		std::cout << "  [" << data[0] << ", " << data[1] << ", " << data[2] << ", ... , "
 		          << data[total_items - 3] << ", " << data[total_items - 2] << ", "
 		          << data[total_items - 1] << "]" << std::endl;
 	}
 
+	// Destructor
 	ProcessData::~ProcessData() {
 		delete[] data;
 	}
 
+	// Overload operator bool. Return true if the items still remaining and data is valid.
 	ProcessData::operator bool() const {
 		return total_items > 0 && data != nullptr;
 	}
 
-	// TODO You create implementation of function operator(). See workshop instructions for details.
+	// Overload operator ()
+	int ProcessData::operator()(const std::string& target_file, double& avg, double& var)
+	{
+		// Compute the average value by calling computeAvgFactor
+		computeAvgFactor(data, total_items, total_items, avg);
+		// Compute variance value by calling computeVarFactor
+		computeVarFactor(data, total_items, total_items, avg, var);
 
+		// Opens the file in binary mode (Using "target_file")
+		std::ofstream outFile(target_file, std::ios::binary);
 
+		// Check the file can open properly
+		if (!outFile) {
+			// Display error message and throw an error
+			std::cerr << "Error: Unable to open file " << target_file << " for writing" << std::endl;
+			throw std::runtime_error("Unable to open the target file for writing.");
+		}
 
+		// Write "total_items" to the "target_file"
+		outFile.write(reinterpret_cast<const char*>(&total_items), sizeof(int));
 
+		// Write "data" to the "target_file"
+		outFile.write(reinterpret_cast<const char*>(data), total_items * sizeof(int));
 
+		return 0;
+	}
 }

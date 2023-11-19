@@ -2,7 +2,7 @@
 // Name:	Sasawat Yimleang
 // ID:		114036221
 // E-mail:	syimleang@myseneca.ca
-// Date:	November 17, 2023
+// Date:	November 19, 2023
 
 #ifndef SDDS_PROCESSDATA_H
 #define SDDS_PROCESSDATA_H
@@ -15,8 +15,8 @@ namespace sdds {
 
 	// Class ProcessData
 	class ProcessData {
-		int total_items{};	// 
-		int* data{};		// 
+		int total_items{};	// An integer number of total data items
+		int* data{};		// The set of data
 	public:
 		ProcessData(const std::string& input_file);
 		ProcessData(const ProcessData&) = delete;
