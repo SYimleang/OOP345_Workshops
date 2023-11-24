@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="part_2\data_int.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="part_2\process_data.cpp" />
+    <ClCompile Include="part_2\w9_p2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="part_2\process_data.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="part_2\sample_output.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,19 +139,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <None Include="part_1\data_int.dat" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="part_1\process_data.cpp" />
-    <ClCompile Include="part_1\w9_p1.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="part_1\process_data.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="part_1\sample_output.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

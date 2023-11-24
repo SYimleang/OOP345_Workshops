@@ -1,7 +1,8 @@
 // Workshop 9 - Multi-threading, Thread class 
-// w9_p2.cpp 
-// 2022/1/5 - Jeevan Pant
-// 2023/11/17 - Cornel
+// Name:	Sasawat Yimleang
+// ID:		114036221
+// E-mail:	syimleang@myseneca.ca
+// Date:	November 24, 2023
 
 #include <iostream>
 #include <iomanip>
