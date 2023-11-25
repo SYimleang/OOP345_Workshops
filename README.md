@@ -1,24 +1,24 @@
 # OOP345 - Object-Oriented Software Development (C++)
-This repository contains my solutions for the OOP345 workshops at Seneca College. Details of each workshop will be inside their directory.
+This repository contains my solutions for the OOP345 workshops at Seneca College.
 
 ## Workshops list
 #### Workshop 1: Across Translation Units
-Implement aspects of linkage, storage duration, namespaces, header guards, and operating system interfaces.
-#### Workshop 2: Move and Copy Semantics
-Work with a large dynamically allocated array of C++ Standard Library strings and compare the performance of copy and move operations on that collection.
-#### Workshop 3: Templates
-Design and code several class templates and test them on different instantiations.
-#### Workshop 4: Containers
-Code three classes that are in composition and aggregation relations.
-#### Workshop 5: Functions and Error Handling
-Code a function object and a lambda expression, and handle exceptions.
-#### Workshop 6: STL Containers
-Store polymorphic objects in an STL container.<br>
-Create a mini UNIX-like filesystem that supports a few common commands.
-#### Workshop 7: STL Algorithms
-Use the Algorithm category of the Standard Template Library.<br>
-Create an application that manages a collection of cities from around the world and the number of COVID cases/deaths from each city in a given year.
-#### Workshop 8: Smart Pointers
-Exclude one collection from another and use smart pointers to ensure that memory is deallocated in the possible presence of an exception.
-#### Workshop 9: Multi-Threading
-Calculate the average of the values stored in a file and use multi-threading to read data from the files and to compute averages of the read data.
+Subdivide a program into modules, compile each module separately, and construct an executable from the results of each compilation. In Part 2, write a modular program.
+#### Workshop 2: Dynamic Memory, References, Overloading
+Use references to modify the content of variables in other scopes, overload functions, allocate memory at run-time, and deallocate that memory when it is no longer required.
+#### Workshop 3: Member Functions and Privacy
+Encapsulate a Train using the name, departure time, and number of passengers. Use member functions, privacy, safe empty state, and dynamic memory allocation to complete work.
+#### Workshop 4: Constructors, Destructors, and the "this" object
+Create default and overloaded constructors, destructors, initialize class member variables, and release member pointers.
+#### Workshop 5: Member Operators, Helper functions
+Implement different types of operator overloading in a partially developed class.
+#### Workshop 6: Classes and resources, IO operators
+Implement a class with overloaded constructors. Then you will overload IO operators that will be used to read and write on the screen and files.
+#### Workshop 7: Derived Classes
+Work with classes that make up a hierarchical structure.
+#### Workshop 8: Virtual Functions and Abstract Base classes
+Create a hierarchy of classes to practice and understand the role of virtual functions in inheritance.
+#### Workshop 9: Derived Class with a Resource
+Apply the rule of three to a class and its descendants.
+#### Workshop 10: Templates
+Create a function template with multiple type names and a function template module.
